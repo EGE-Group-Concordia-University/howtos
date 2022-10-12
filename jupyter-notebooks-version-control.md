@@ -4,7 +4,7 @@
 
 Based on the answer from @dirkjot of [this StackOverflow question](https://stackoverflow.com/questions/28908319/how-to-clear-an-ipython-notebooks-output-in-all-cells-from-the-linux-terminal/).
 
-1. In each folder where notebook outputs are not be tracked add a `.gitattributes` file with this content:
+1. In each folder where notebook outputs are not to be tracked add a `.gitattributes` file with this content:
 ```
 *.ipynb filter=strip-notebook-output  
 ```
@@ -21,7 +21,7 @@ This change needs to be made after cloning the repository locally.
 
 Based on [this blog](https://timstaley.co.uk/posts/making-git-and-jupyter-notebooks-play-nice/)
 
-1. In each folder where notebook outputs are not be tracked add a `.gitattributes` file with this content:
+1. In each folder where notebook outputs are not to be tracked add a `.gitattributes` file with this content:
 ```
 *.ipynb filter=strip-notebook-full  
 ```
