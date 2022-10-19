@@ -1,7 +1,7 @@
 # Example use cases for ```ssh_config```
 
 The behaviour of ```ssh``` can be configured with the global ```/etc/ssh/ssh_config``` configuration file and in the user ```~/.ssh/config``` file.
-More infomrmation can be found on the [offical documentation](https://www.ssh.com/academy/ssh/config).
+More information can be found on the [offical documentation](https://www.ssh.com/academy/ssh/config).
 
 ## Connecting to a remote host on a specific port
 To connect to a remote host on a specific port one uses typically the command
