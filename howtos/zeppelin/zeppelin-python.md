@@ -40,5 +40,5 @@ sudo mkdir /opt/conda/envs/
 
 2) Create a conda environment for Python:
 ```
-sudo /opt/conda/bin/conda create --prefix /opt/conda/envs/python python=3.10
+sudo /opt/conda/bin/conda create --prefix /opt/conda/envs/python3 python=3.7
 ```
