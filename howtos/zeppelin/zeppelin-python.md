@@ -42,3 +42,11 @@ sudo mkdir /opt/conda/envs/
 ```
 sudo /opt/conda/bin/conda create --prefix /opt/conda/envs/python3 python=3.7
 ```
+
+## Adjust configurations in Zeppelin interpreter config file
+
+In ```conf/interpreter.json``` provide full path to ```python``` to ```zeppelin.python```
+```
+"value": "/opt/conda/envs/python3/bin/python3"
+```
+```
