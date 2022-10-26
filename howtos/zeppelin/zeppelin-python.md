@@ -49,3 +49,4 @@ In ```conf/interpreter.json``` provide full path to ```python``` to ```zeppelin.
 ```
 "value": "/opt/conda/envs/python3/bin/python3"
 ```
+or direclty in the Zeppelin web-app: http://localhost:8080/#/interpreter
