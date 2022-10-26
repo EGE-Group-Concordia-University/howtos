@@ -49,4 +49,3 @@ In ```conf/interpreter.json``` provide full path to ```python``` to ```zeppelin.
 ```
 "value": "/opt/conda/envs/python3/bin/python3"
 ```
-```
