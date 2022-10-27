@@ -1,4 +1,4 @@
-# Setup Apache Zeppelin 0.10.0 as a single user on Ubunthu 22.04
+# Setup Apache Zeppelin 0.10.1 as a single user on Ubunthu 22.04
 Official web-site: [https://zeppelin.apache.org/](https://zeppelin.apache.org/)
 
 ## Installlation
@@ -7,11 +7,11 @@ Official web-site: [https://zeppelin.apache.org/](https://zeppelin.apache.org/)
 ```
 sudo apt install openjdk-18-jre-headless
 ```
-2) Download binnary package
+2) Download binnary package:
 ```
 wget https://dlcdn.apache.org/zeppelin/zeppelin-0.10.1/zeppelin-0.10.1-bin-all.tgz
 ```
-3) Extract archive in a directory of your choice
+3) Extract archive in a directory of your choice:
 ```
 tar -zxf zeppelin-0.10.1-bin-all.tgz
 ```
