@@ -10,26 +10,28 @@ We use `conda` to manage Python environments. We install the officially maintain
 tin order get automatic updates with the rest of the system.
 
 Install Anacononda public gpg key to trusted store
-
 ```
 curl https://repo.anaconda.com/pkgs/misc/gpgkeys/anaconda.asc | gpg --dearmor > conda.gpg
 sudo install -o root -g root -m 644 conda.gpg /etc/apt/trusted.gpg.d/
 ```
 
 Add Debian repo
-
 ```
 echo "deb [arch=amd64] https://repo.anaconda.com/pkgs/misc/debrepo/conda stable main" | sudo tee /etc/apt/sources.list.d/conda.list
 ```
 
 Install conda
-
 ```
 sudo apt update
 sudo apt install conda
 ```
-
 This will install conda into the folder `/opt/conda/`, with the conda command available at `/opt/conda/bin/conda`.
+
+Make conda available to users by symlinking the conda shell setup script to the profile 'drop in' folder so that it gets run on login
+```
+sudo ln -s /opt/conda/etc/profile.d/conda.sh /etc/profile.d/conda.sh
+```
+This is needed so Zeppelin can exacute the ```conda``` command.
 
 ## Setup a Python conda environment for all users
 
