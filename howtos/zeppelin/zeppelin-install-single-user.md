@@ -13,12 +13,12 @@ wget https://dlcdn.apache.org/zeppelin/zeppelin-0.10.1/zeppelin-0.10.1-bin-all.t
 ```
 3) Extract archive
 ```
-sudo tar -zxf zeppelin-0.10.1-bin-all.tgz
+tar -zxf zeppelin-0.10.1-bin-all.tgz
 ```
 
 4) cp template configuration file to actual one:
 ```
-sudo cp conf/zeppelin-site.xml.template conf/zeppelin-site.xml
+cp conf/zeppelin-site.xml.template conf/zeppelin-site.xml
 ```
 
 5) Change binding adress in ```conf/zeppelin-site.xml``` to ```0.0.0.0``` to allow remote access:
@@ -33,11 +33,11 @@ sudo cp conf/zeppelin-site.xml.template conf/zeppelin-site.xml
 ## Starting Apache Zeppelin
 Run
 ```
-sudo bin/zeppelin-daemon.sh start
+bin/zeppelin-daemon.sh start
 ```
 Zeppelin server is available on port ```8080``` by default
 
 To stop Zeppelin:
 ```
-sudo bin/zeppelin-daemon.sh stop
+bin/zeppelin-daemon.sh stop
 ```
