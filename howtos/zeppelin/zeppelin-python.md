@@ -7,7 +7,7 @@ Official web-site: [https://zeppelin.apache.org/docs/0.10.0/quickstart/python_wi
 Based on instructions from [JupyterHub](https://github.com/jupyterhub/jupyterhub-the-hard-way/blob/HEAD/docs/installation-guide-hard.md)
 
 We use `conda` to manage Python environments. We install the officially maintained `conda` packages for Ubuntu,
-tin order get automatic updates with the rest of the system.
+in order get automatic updates with the rest of the system.
 
 Install Anacononda public gpg key to trusted store
 ```
