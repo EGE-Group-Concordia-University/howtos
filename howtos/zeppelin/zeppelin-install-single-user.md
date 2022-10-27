@@ -5,7 +5,7 @@ Official web-site: [https://zeppelin.apache.org/](https://zeppelin.apache.org/)
 
 1) Install Java:
 ```
-sudo apt install openjdk-18-jre-headless
+sudo apt install openjdk-18-jdk-headless
 ```
 2) Download binnary package:
 ```
