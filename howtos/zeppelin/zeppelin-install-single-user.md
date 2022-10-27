@@ -11,7 +11,7 @@ sudo apt install openjdk-18-jre-headless
 ```
 wget https://dlcdn.apache.org/zeppelin/zeppelin-0.10.1/zeppelin-0.10.1-bin-all.tgz
 ```
-3) Extract archive
+3) Extract archive in a directory of your choice
 ```
 tar -zxf zeppelin-0.10.1-bin-all.tgz
 ```
