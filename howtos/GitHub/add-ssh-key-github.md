@@ -1,6 +1,6 @@
 # Adding a new SSH key to your GitHub account
 
-This is a simplified how-to on how to setup authentification using SSH key to GitHub. 
+This is a simplified how-to on how to setup authentication using SSH key to GitHub. 
 The full documentation is available on the official GitHub [documentation](https://docs.github.com/en/authentication/connecting-to-github-with-ssh).
 
 This how-to gives specific commands for our JupyterHub environment. This is a one time setup that needs to be done.
