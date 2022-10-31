@@ -15,8 +15,8 @@ The private key will be called ```id_rsa``` and the associated public key will b
 If you had previously generated an SSH key pair, you will be asked if you want to overwrite it.
 If you choose to overwrite the key on disk, you will not be able to authenticate using the previous key anymore.
 
-Next, you will be prompted to enter a passphrase for the key. As we need a password less access to the remote machine
-for the ssh magics, provide an empty passphrase by simply pressing the ```ENTER``` key.
+Next, you will be prompted to enter a passphrase for the key. If you need a password less access to the remote machine,
+provide an empty passphrase by simply pressing the ```ENTER``` key.
 ```
 Output
 Your identification has been saved in /home/username/.ssh/id_rsa.
@@ -37,7 +37,7 @@ The key's randomart image is:
 +----[SHA256]-----+
 ```
 
-As your key is not protected by a passphrase, it is important to have appropriate file permissions of the generated keys.
+It is important to have appropriate file permissions of the generated keys.
 The default permissions (```id_rsa``` only user has read/write access 
 and ```id_rsa.pub``` user has read/write access and group and world has read access) 
 created by ```ssh-keygen``` are the ones to use and should not be changed.
