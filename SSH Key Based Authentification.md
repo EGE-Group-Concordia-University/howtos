@@ -95,4 +95,5 @@ You can try to log to your remote machine by typing this command in the terminal
 ```
 ssh username@remote_host
 ```
-and you should get access to it without any password prompt.
+and you should get access to it without any password prompt if you didnt provide a passphrase to the ssh key, 
+or using your selected passphrase if you did choose one.
