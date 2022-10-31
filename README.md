@@ -10,4 +10,4 @@ How-tos of frequent tasks
 [How-to use ssh_config](https://github.com/EGE-Group-Concordia-University/howtos/blob/main/howtos/ssh/ssh_config.md)
 
 ## GitHub
-[Adding a new SSH key to your GitHub account](https://github.com/EGE-Group-Concordia-University/howtos/tree/main/howtos/GitHub)
+[Adding a new SSH key to your GitHub account](https://github.com/EGE-Group-Concordia-University/howtos/blob/main/howtos/GitHub/add-ssh-key-github.md)
