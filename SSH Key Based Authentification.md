@@ -1,5 +1,7 @@
 # Configure SSH Key-Based Authentication
 
+To know more about SSH key-based authentication read [here](https://www.ssh.com/academy/ssh/public-key-authentication).
+
 ## Step 1 - Creating SSH Keys
 First a SSH key pair needs to be generated. If you already have generated previously a key pair
 do not repeat it as otherwise you will overwrite it.
