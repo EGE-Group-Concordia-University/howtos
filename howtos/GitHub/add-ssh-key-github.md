@@ -54,7 +54,7 @@ Output
 ```
 
 ## Adding your SSH key to the ssh-agent
-In a terminal in JupyterLab run:
+In a terminal in JupyterLab run (make sure your shell is `bash`. You can always start a `bash` shel by first runnign the command `bash` in your terminal):
 ```
 eval "$(ssh-agent -s)"
 ```
