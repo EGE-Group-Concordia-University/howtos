@@ -87,7 +87,7 @@ The copied text needs to be pasted in your GitHub settings. For this (see [here]
 7. Click Add SSH key. 
 
 ## Check connectivty to GitHub
-Check if you can connect to GitHub using ssh by runing the following command in a terminal in JupyerLabL
+Check if you can connect to GitHub using ssh by runing the following command in a terminal in JupyerLab
 ```
 ssh -T git@github.com
 ```
