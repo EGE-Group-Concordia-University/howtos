@@ -18,3 +18,9 @@ network:
   version: 2
 ```
 In this example the static IP adress of the virtual machine will be `10.0.2.12`.
+
+Check your configuration with
+```
+sudo netplan --debug apply
+```
+
