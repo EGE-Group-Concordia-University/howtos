@@ -1,10 +1,10 @@
 # Nat networks
 
 ## Creation
-Nat networks can be created in Files>settings
+Nat networks can be created in Files>Preferences under Network.
 
 ## Port forwarding
-In Files>settings choose your netowrk and click on edit properties.
+In Files>Preferences>Network choose your network and click on edit properties.
 
 ## Assign a fixed IP to your virtual machine
 In an ubuntu machine modify `/etc/netplan/00-installer-config.yaml` to look as follows:
