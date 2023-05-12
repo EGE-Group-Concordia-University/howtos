@@ -16,7 +16,7 @@ network:
       dhcp4-overrides:
         use-dns: false
       gateway4: 10.0.2.1
-      addresses: [10.0.2.13/24]
+      addresses: [10.0.2.12/24]
       nameservers:
         addresses: [8.8.8.8,8.8.4.4]
         addresses: [132.205.1.1,132.205.96.93,132.205.96.94]
