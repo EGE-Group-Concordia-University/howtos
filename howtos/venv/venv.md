@@ -34,7 +34,7 @@ Replace `myenv` by any suitable name for your project of your choice (for exampl
 
 This creates the folder `myenv` within `~/venv`. This folder will hold all libraries you will install in future for that virtual environment.
 
-### Activate/deactivate your virtual environment:
+### Activate/deactivate your virtual environment
 To use your virtual environment, it needs to be activated. As long as it is activated, all `python` related activities will use libraries from this virtual environment.
 
 Once no longer needed (or if you want to switch to another project) you have to deactivate the virtual environment.
@@ -51,7 +51,7 @@ b)	To deactivate your environment use:
 ```
 Your prompt will change back to your regular prompt.
 
-### To install a library:
+### To install a library
 To install a library `my-library` run in the activated virtual environment (you can be in any folder to run this command, as long as your virtual environment is activated):
 ```
 (myenv) python3 -m pip install my-library
