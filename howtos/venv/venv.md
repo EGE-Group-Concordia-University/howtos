@@ -1,8 +1,8 @@
 # Virtual environments with Python
 
 Python virtual environments allow to address two issues
-a)	It allows, on a project base, to install the python libraries required for the project and this way avoids issues with conflicting versions of libraries 
-b)	It allows not privileged users (without admin privileges) to install the required libraries for their work
+1)	It allows, on a project base, to install the python libraries required for the project and this way avoids issues with conflicting versions of libraries 
+2)	It allows not privileged users (without admin privileges) to install the required libraries for their work
 
 ## Prerequisites
 The required software packages / libraries can be installed like so (required amdin privilege)
