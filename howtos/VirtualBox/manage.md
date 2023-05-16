@@ -1,6 +1,6 @@
 # Manage virtual machines with VBoxManage
 
-## List exisiing virtual machines
+## List exisiting virtual machines
 To list defined virtual machines:
 ```
 VBoxManage list vms
