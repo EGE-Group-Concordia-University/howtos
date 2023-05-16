@@ -11,3 +11,6 @@ How-tos of frequent tasks
 
 ## GitHub
 [Adding a new SSH key to your GitHub account](https://github.com/EGE-Group-Concordia-University/howtos/blob/main/howtos/GitHub/add-ssh-key-github.md)
+
+## Python
+[Virtual environments](https://github.com/EGE-Group-Concordia-University/howtos/blob/main/howtos/venv/venv.md)
