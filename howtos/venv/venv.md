@@ -13,7 +13,7 @@ sudo apt install python3 python3-venv python3-pip
 ## Setting up a virtual environment in your account
 
 ### Setup folder for your virtual environment
-In your home folder create a folder to hold your virtual environments (in our case we make the folder `venv`)
+In your home folder create a folder to hold your virtual environments (in our case we create the folder `venv`)
 ```
 mkdir venv
 ```
