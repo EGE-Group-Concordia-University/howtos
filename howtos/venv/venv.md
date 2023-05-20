@@ -5,7 +5,7 @@ Python virtual environments allow to address two issues
 2)	It allows not privileged users (without admin privileges) to install the required libraries for their work
 
 ## Prerequisites
-The required software packages / libraries can be installed like so (required amdin privilege):
+The required software packages / libraries can be installed like so (requires admin privilege):
 ```
 sudo apt install python3 python3-venv python3-pip
 ```
