@@ -42,11 +42,11 @@ python3 -m pip install kafka-python
 You can install as many libraries as desired and you can add later more libraries as needed.
 
 ## Setup your virtual environment as a JupyterHub Kernel
-In order to become a Kernel for JupyterHub, the following library needs to be installed in the virtual environment (make sure your virtual environmetn is activated):
+In order to become a Kernel for JupyterHub, the following library needs to be installed in the virtual environment (make sure your virtual environment is activated):
 ```
 python3 -m pip install ipykernel 
 ```
-The virtual environment is transformed into a JupyterHub kernel by running (make sure your virtual environmetn is activated):
+The virtual environment is transformed into a JupyterHub kernel by running (make sure your virtual environment is activated):
 ```
 python -m ipykernel install --user --name=my_kernel
 ```
