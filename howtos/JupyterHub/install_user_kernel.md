@@ -62,7 +62,7 @@ At this point the Kernel should show up in your JupyterHub account together with
 
 You can verify that the Kernel is correctly recognized by the JupyterHub server bu running
 ```
-jupyter kernelspec list
+/opt/jupyterhub/bin/jupyter kernelspec list
 ```
 which will show something like this:
 ```
@@ -83,10 +83,32 @@ If you want to further to remove your virtual environment you will have to remov
 ## Advanced configuration
 Your Kernel configuration is located in the folder displayed by the command
 ```
-jupyter kernelspec list
+/opt/jupyterhub/bin/jupyter kernelspec list
 ```
 and will be typically in `~/.local/share/jupyter/kernels/my_kernel`. Advanced configurations can be done by changing the files in that folder.
 
 ### Change the logo of your Kernel
 You can replace the files `logo-32x32.png` and `logo-64x64.png` by your own logo (must be in `png` format and with the sizes 32x32 and 64x64 pixels).
 You will have to clear the cash of your browser to see the changes take effect. Futher the file `logo-svg.svg` will have to be removed (or replaced by your logo).
+
+### Add environment variables
+The file `kernel.json` defines how the virtual environment is linked with JupyerHub. More in depth information on this file can be found [here](https://jupyter-client.readthedocs.io/en/stable/kernels.html#kernel-specs).
+
+Among others, environmetn variable can be added by speciying a dictionary `env` of environment variables to set when the kernel is loaded. For example:
+```
+{
+ "argv": [
+    ...
+ ],
+ "display_name": "...",
+ "language": "python",
+ "metadata": {
+   ...
+ },
+ "env": {
+    "CUDNN_PATH": "/opt/conda/envs/tf/lib/python3.11/site-packages/nvidia/cudnn",
+    "LD_LIBRARY_PATH": "/opt/conda/envs/tf/lib/:/opt/conda/envs/tf/lib/python3.11/site-packages/nvidia/cudnn/lib"
+ } 
+}
+```
+sets two environment variables `CUDNN_PATH` and `LD_LIBRARY_PATH` which are needed on `egegpu` for TensoFlow to run correctly.
