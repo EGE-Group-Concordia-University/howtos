@@ -39,7 +39,10 @@ Install all libraries you want to add to your environment. In this example we ad
 ```
 python3 -m pip install kafka-python
 ```
-You can install as many libraries as desired and you can add later more libraries as needed.
+You can install as many libraries as desired and you can add later more libraries as needed. If you want to use a `requiremetns.txt` file this can be done like so:
+```
+python3 -m pip install -r /path/to/requirements.txt 
+```
 
 ## Setup your virtual environment as a JupyterHub Kernel
 In order to become a Kernel for JupyterHub, the following library needs to be installed in the virtual environment (make sure your virtual environment is activated):
