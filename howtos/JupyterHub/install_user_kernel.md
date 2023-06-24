@@ -31,31 +31,34 @@ source my_env/bin/activate
 ```
 To check if everything works well and at same time get latest version of `pip` run:
 ```
-pip install --upgrade pip
+(my_env) pip install --upgrade pip
 ```
 This should upgrade `pip` in your environment, or confirm that it is at the latest version.
 
 Install all libraries you want to add to your environment. In this example we add the library `kafka-python`:
 ```
-python3 -m pip install kafka-python
+(my_env) python3 -m pip install kafka-python
 ```
 You can install as many libraries as desired and you can add later more libraries as needed. If you want to use a `requiremetns.txt` file this can be done like so:
 ```
-python3 -m pip install -r /path/to/requirements.txt 
+(my_env) python3 -m pip install -r /path/to/requirements.txt 
 ```
 
 ## Setup your virtual environment as a JupyterHub Kernel
 In order to become a Kernel for JupyterHub, the following library needs to be installed in the virtual environment (make sure your virtual environment is activated):
 ```
-python3 -m pip install ipykernel 
+(my_env) python3 -m pip install ipykernel 
 ```
 The virtual environment is transformed into a JupyterHub kernel by running (make sure your virtual environment is activated):
 ```
-python -m ipykernel install --user --name=my_kernel --display-name="My own Kernel"
+(my_env) python -m ipykernel install --user --name=my_kernel --display-name="My own Kernel"
 ```
 where any name for the Kernel can be choosen (here we used `my_kernel`) and any diplay name can be choosen.
 
-At this point the Kernel should show up in your JupyterHub account together with the other defined kernels. You may have to stop and restart your server from File>Hub Control Panel.
+At this point the Kernel should show up in your JupyterHub account together with the other defined kernels. You may have to stop and restart your server from File>Hub Control Panel. You can now deactivate your virtual environment in the terminal:
+```
+(my_env) deactivate
+```
 
 You can verify that the Kernel is correctly recognized by the JupyterHub server bu running
 ```
