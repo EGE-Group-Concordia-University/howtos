@@ -48,9 +48,9 @@ python3 -m pip install ipykernel
 ```
 The virtual environment is transformed into a JupyterHub kernel by running (make sure your virtual environment is activated):
 ```
-python -m ipykernel install --user --name=my_kernel
+python -m ipykernel install --user --name=my_kernel --display-name="My own Kernel"
 ```
-where any name for the Kernel can be choosen (here we used `my_kernel`)
+where any name for the Kernel can be choosen (here we used `my_kernel`) and any diplay name can be choosen.
 
 At this point the Kernel should show up in your JupyterHub account together with the other defined kernels. You may have to stop and restart your server from File>Hub Control Panel.
 
