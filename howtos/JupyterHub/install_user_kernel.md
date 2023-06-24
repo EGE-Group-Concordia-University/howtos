@@ -79,3 +79,14 @@ jupyter kernelspec remove my_test_kernel
 ```
 This only removes the link between your virtual environment and JupyterHub. 
 If you want to further to remove your virtual environment you will have to remove the folder `my_env`.
+
+## Advanced configuration
+Your Kernel configuration is located in the folder displayed by the command
+```
+jupyter kernelspec list
+```
+and will be typically in `~/.local/share/jupyter/kernels/my_kernel`. Advanced configurations can be done by changing the files in that folder.
+
+### Change the logo of your Kernel
+You can replace the files `logo-32x32.png` and `logo-64x64.png` by your own logo (must be in `png` format and with the sizes 32x32 and 64x64 pixels).
+You will have to clear the cash of your browser to see the changes take effect. Futher the file `logo-svg.svg` will have to be removed (or replaced by your logo).
