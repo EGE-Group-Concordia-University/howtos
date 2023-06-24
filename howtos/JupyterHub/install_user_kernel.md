@@ -94,7 +94,7 @@ You will have to clear the cash of your browser to see the changes take effect. 
 ### Add environment variables
 The file `kernel.json` defines how the virtual environment is linked with JupyerHub. More in depth information on this file can be found [here](https://jupyter-client.readthedocs.io/en/stable/kernels.html#kernel-specs).
 
-Among others, environmetn variable can be added by speciying a dictionary `env` of environment variables to set when the kernel is loaded. For example:
+Among others, environment variable can be added by specifying a dictionary `env` of environment variables to set when the kernel is loaded. For example:
 ```
 {
  "argv": [
