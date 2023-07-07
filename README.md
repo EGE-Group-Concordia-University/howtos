@@ -12,7 +12,9 @@ How-tos of frequent tasks
 [How-to use ssh_config](https://github.com/EGE-Group-Concordia-University/howtos/blob/main/howtos/ssh/ssh_config.md)
 
 ## GitHub
-[Adding a new SSH key to your GitHub account](https://github.com/EGE-Group-Concordia-University/howtos/blob/main/howtos/GitHub/add-ssh-key-github.md)
+[Adding a new SSH key to your GitHub account](howtos/GitHub/add-ssh-key-github.md)
+
+[Install a Python package with pip from a private GitHub repository](howtos/GitHub/pip_install_from_private_repo.md)
 
 ## Python
 [Virtual environments](https://github.com/EGE-Group-Concordia-University/howtos/blob/main/howtos/venv/venv.md)
