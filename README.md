@@ -18,3 +18,6 @@ How-tos of frequent tasks
 
 ## Python
 [Virtual environments](https://github.com/EGE-Group-Concordia-University/howtos/blob/main/howtos/venv/venv.md)
+
+## ESP Boards
+[Upload new bootloader to the board](howtos/ESPBoards/burn-new-bootloader.md)
