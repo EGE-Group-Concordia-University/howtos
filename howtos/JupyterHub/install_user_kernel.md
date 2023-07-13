@@ -111,7 +111,7 @@ Among others, environment variables can be added by specifying a dictionary `env
  } 
 }
 ```
-sets two environment variables `CUDNN_PATH` and `LD_LIBRARY_PATH` which are needed on `egegpu` for TensoFlow to run correctly.
+sets two environment variables `CUDNN_PATH` and `LD_LIBRARY_PATH` which are needed on `egegpu` for TensorFlow to run correctly.
 
 To verify the new environment are set correclty, open a fresh notebook and attach it to your Kernel. Executing
 ```
