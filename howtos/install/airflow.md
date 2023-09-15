@@ -54,7 +54,7 @@ For the remaining operations, log as user `airflow`:
    ```
    Note: the install can fail on a fresh Ubuntu 22.04 LTS server because not all dependencises for
          installing `pip install mysqlclient` are met. Typically `sudo apt install pkg-config` has to be run first.
-7. Create initial configuration by running (in the home directory of user `airflow`:
+7. Create initial configuration by running (in the home directory of user `airflow`):
    ```
    (airflow) cd ~
    (airflow) airflow config list
