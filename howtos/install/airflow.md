@@ -48,9 +48,9 @@ For the remaining operations, log as user `airflow`:
    ```
    source /opt/airflow/bin/activate
    ```
-6. Install Airflow with the needed packages for MySQL backend for the metadata store of Airflow:
+6. Install Airflow with the needed packages for MySQL backend for the metadata store of Airflow and celery as executor:
    ```
-   (airflow) pip3 install apache-airflow[mysql]
+   (airflow) pip3 install apache-airflow[mysql, celery]
    ```
    Note: the install can fail on a fresh Ubuntu 22.04 LTS server because not all dependencises for
          installing `pip install mysqlclient` are met. Typically `sudo apt install pkg-config` has to be run first.
@@ -65,6 +65,10 @@ For the remaining operations, log as user `airflow`:
    Remove the intial DAG examples:
    ```
    load_examples = False
+   ```
+   Configure executor:
+   ```
+   executor = CeleryExecutor
    ```
    Configure access to MySQL data-base:
    ```
