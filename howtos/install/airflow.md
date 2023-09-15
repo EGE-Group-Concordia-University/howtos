@@ -1,11 +1,11 @@
 # Install Apache Airflow on Ubuntu 22.04 LTS
 
 1. Create a user `airflow` which will run Apache Airflow:
-   Note: the group `GID` and user `UID` in this example are choosen as 1101. This can be changed as needed.
    ```
    sudo groupadd --gid 1101 airflow
    sudo adduser --uid 1101 --gid 1101 airflow
    ```
+   Note: the group `GID` and user `UID` in this example are choosen as 1101. This can be changed as needed.
 2. Create a Python virtual environemnt in `/opt/airflow`:
    ```
    sudo python3 -m venv /opt/airflow/
