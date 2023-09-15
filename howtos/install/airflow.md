@@ -74,5 +74,9 @@ For the remaining operations, log as user `airflow`:
    ```
    sql_alchemy_conn = mysql+mysqldb://airflow_user:<password>@localhost:3306/airflow_db
    ```
-10. 
+10. Init the database:
+    ```
+    airflow db init
+    ```
+11. 
 
