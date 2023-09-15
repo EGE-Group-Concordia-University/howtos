@@ -1,5 +1,9 @@
 # Install Apache Airflow on Ubuntu 22.04 LTS
 
+## Prereqisits
+1. MySQL server
+   
+## Installation of Apache Airflow
 1. Create a user `airflow` which will run Apache Airflow:
    ```
    sudo groupadd --gid 1101 airflow
@@ -14,14 +18,20 @@
    ```
    sudo chown airflow:airflow /opt/airflow/
    ```
+4. In `mysql`, create a database `airflow_db` and a user `airflow_user` (choose a secure passowrd):
+   ```
+   CREATE DATABASE airflow_db CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
+   CREATE USER 'airflow_user' IDENTIFIED BY 'airflow_pass';
+   GRANT ALL PRIVILEGES ON airflow_db.* TO 'airflow_user';
+   ```
 
 For the remaining operations, log as user `airflow`:
    
-4. As user `airflow`, activate the virtual environment:
+5. As user `airflow`, activate the virtual environment:
    ```
    source /opt/airflow/bin/activate
    ```
-5. Install Airflow with the needed packages for MySQL backend for the metadata store of Airflow:
+6. Install Airflow with the needed packages for MySQL backend for the metadata store of Airflow:
    ```
    (airflow) pip3 install apache-airflow[mysql]
    ```
@@ -33,3 +43,4 @@ For the remaining operations, log as user `airflow`:
    (airflow) airflow config list
    ```
    this will create the directory `~/airflow`
+
