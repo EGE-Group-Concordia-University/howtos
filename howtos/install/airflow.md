@@ -24,6 +24,23 @@
    CREATE USER 'airflow_user' IDENTIFIED BY 'airflow_pass';
    GRANT ALL PRIVILEGES ON airflow_db.* TO 'airflow_user';
    ```
+   Further, verify that `explicit_defaults_for_timestamp` is `ON` with:
+   ```
+   SHOW GLOBAL VARIABLES LIKE '%timestamp%';
+   ```
+   If the output is like
+   ```
+   +---------------------------------+-------+
+   | Variable_name                   | Value |
+   +---------------------------------+-------+
+   | explicit_defaults_for_timestamp | OFF   |
+   | log_timestamps                  | UTC   |
+   +---------------------------------+-------+
+   ```
+   the option needs to be turned ON with
+   ```
+   SET GLOBAL explicit_defaults_for_timestamp = 1;
+   ```
 
 For the remaining operations, log as user `airflow`:
    
