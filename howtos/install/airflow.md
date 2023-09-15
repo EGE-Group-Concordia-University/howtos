@@ -60,4 +60,15 @@ For the remaining operations, log as user `airflow`:
    (airflow) airflow config list
    ```
    this will create the directory `~/airflow`
+8. Edit `airflow.cfg` (verif as well that only the user `airflow` has read/write access to this file as secrets will be stored in it)
+
+   Remove the intial DAG examples:
+   ```
+   load_examples = False
+   ```
+   Configure access to MySQL data-base:
+   ```
+   sql_alchemy_conn = mysql+mysqldb://airflow_user:<password>@localhost:3306/airflow_db
+   ```
+10. 
 
