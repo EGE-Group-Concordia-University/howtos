@@ -76,7 +76,11 @@ For the remaining operations, log as user `airflow`:
    ```
 10. Init the database:
     ```
-    airflow db init
+    (airflow) airflow db init
     ```
-11. 
+11. Create admin user
+    ```
+    (airflow) airflow users create --username ... --firstname ... --lastname ... --role Admin --email ...
+    ```
+    where the `...` needs to be filled accordingly your needs
 
