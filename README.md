@@ -16,6 +16,8 @@ How-tos of frequent tasks
 
 [Install a Python package with pip from a private GitHub repository](howtos/GitHub/pip_install_from_private_repo.md)
 
+[Create repository access tokens](howtos/GitHub/add_repo_access_token.md)
+
 ## Python
 [Virtual environments](https://github.com/EGE-Group-Concordia-University/howtos/blob/main/howtos/venv/venv.md)
 
