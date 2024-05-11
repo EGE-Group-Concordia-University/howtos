@@ -1,4 +1,4 @@
-# JupyerHub in VSCode
+# JupyterHub in VSCode
 
 ## Adjust working directory of Jupyter Notebooks
 In VSCode JupyterHub extension, the working directory is not the directory in which the notebook is stored, as it is the case in JupyterLab.
